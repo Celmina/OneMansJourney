@@ -1,6 +1,6 @@
 # OneMansJourney
 
-##Pirmās salas scenārijs:
+## Pirmās salas scenārijs:
 1. Pamošanās bunkurā: Galvenais varonis (GV) pamostas krioģeniskajā kapsulā pazemes bunkurā uz Indonēzijas salas. Apkārt ir pilnīgs klusums un tumsa. Bunkurā visas sistēmas šķiet izslēgtas, un GV pamazām sāk saprast, ka viņš ir viens. Sistēmu pārbaudot, viņš saprot, ka civilizācija ir izmirusi, un vienīgais veids, kā turpināt dzīvot, ir atrast citus izdzīvojušos.
 2. Bunkura izpēte: GV sāk izpētīt bunkura gaiteņus, lai atrastu ceļu ārā. Bunkura iekšpuse ir nolaista un drūma, sienas klāj rūsas traipi un saplīsuši vadi. Galu galā GV kāpnes, kas ved viņu uz augšu, un viņš iznāk virszemē. Tur viņu sagaida brīnišķīga, bet vienlaikus skumja aina – sala šķiet tukša un klusa, kā pēc kādas nezināmas katastrofas.
 3. Pamestais ciemats: GV sāk klejot pa salu, meklējot dzīvības pazīmes. Drīz viņš nonāk pie pamesta ciemata, kur visa infrastruktūra ir pamesta un pamazām izzūd dabā. Ciemats ir apklāts ar nezālēm un kluss, bet GV pamana māju, kurā joprojām ir kaut kas funkcionējošs – vecs, putekļiem klāts radio, kas atrodas skapī.
@@ -17,7 +17,7 @@
 14. Degvielas atrašana: GV ieiet garāžā un paņem degvielas kannu, kuru viņš atnes atpakaļ uz laivu. Ielejot degvielu motorā, viņš vēlreiz mēģina iedarbināt motoru, un šoreiz tas sāk strādāt.
 15. Aizbraukšana uz nākamo salu: GV ielec laivā un dodas prom no salas. Pāri jūrai viņš redz nākamo salu, kur sāksies viņa nākamais piedzīvojums.
 
-##Otrās salas scenārijs:
+## Otrās salas scenārijs:
 1. Ierašanās jaunajā salā: Galvenais varonis (GV) ar motorlaivu tuvojas otrajai salai. Tā ir pārklāta ar biezām džungļu masām, un fonā viņš pamana milzīgu radio torni, kas slejas augstu debesīs. Šis tornis kļūst par viņa jauno mērķi, jo, iespējams, ar to varētu uztvert tālākus radio signālus no citām salām.
 2. Nolaišanās krastā: Izkāpis krastā, GV redz izpostītu ciematu pie upes, bet tam nav laika veltīt lielu uzmanību, jo torņa virzienā ir bieza džungļu josla un nakts sāk pamazām tuvoties. Ceļš līdz tornim ir garš un pilns ar nezināmiem šķēršļiem.
 3. Pirmie šķēršļi: Dodoties cauri džungļiem, GV sastop pirmo šķērsli – brūkošu, izpostītu tiltu, kas savieno divas lielas akmens klintis pāri upei. Vienīgā iespēja ir atrast veidu, kā to salabot vai atrast citu pāreju.
@@ -29,7 +29,7 @@
 8. Radio tornis un kontakts: Noskenējot kartiņu, vārti atveras, un GV beidzot nokļūst pie torņa. Viņš kāpj pa garajām kāpnēm uz torņa virsotni, kur sāk uztvert dažādus signālus. Viņam izdodas atrast frekvenci un sazināties ar izdzīvojušajiem no trešās salas, kuri norāda viņam koordinātes. Tie mudina viņu būt uzmanīgam, jo ceļojums uz trešo salu nebūs vienkāršs.
 
 
-##Trešās salas scenārijs:
+## Trešās salas scenārijs:
 1. Ierašanās trešajā salā: GV, pēc kontakta ar izdzīvojušajiem uz otrās salas, dodas ceļā. Piebraucot pie salas, viņš pamana, ka apkārtne ir daudz civilizētāka nekā iepriekšējās salās, bet tā joprojām šķiet tukša un pamesta.
 2. Pamesta pilsēta: Izkāpis uz salas, GV nonāk pie pamestas pilsētas, kas ir aizaugusi ar veģetāciju. Dažas ēkas izskatās stabilas, bet citas ir sabrukušas. GV izpēta apkārtni, meklējot pavedienus par izdzīvojušo atrašanās vietu, un pamazām atklāj, ka pilsētā ir kādas pēdas, kas ved dziļāk iekšzemē. Viņš atrod salas karti un vēstuli vienā no ēkām, kurā teikts, ka izdzīvojušie ir devušies uz bāzi salas centrā.
 3. Applūdušie tuneļi: Ceļš, kas ved uz izdzīvojušo nometni, iet caur applūdušiem tuneļiem. GV ir jāatrod veids, kā tikt cauri šiem tuneļiem. Viņš meklē apkārt, līdz atrod vecu laivu, kas ir sagruvusi, bet ar nedaudz laika un resursiem viņš to varētu salabot.
