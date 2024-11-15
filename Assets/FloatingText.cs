@@ -12,7 +12,7 @@ public class FloatingText : MonoBehaviour
     {
         camera = Camera.main.transform;
         unit = transform.parent;
-        canvas = FindFirstObjectByType<Canvas>().transform;
+        //canvas = FindFirstObjectByType<Canvas>().transform;
         
         transform.SetParent(canvas);
     }
