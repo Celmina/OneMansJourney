@@ -7,16 +7,18 @@ public class SoundSettings : MonoBehaviour
     [SerializeField] Slider soundSlider;
     [SerializeField] AudioMixer masterMixer;
 
-    private void Start()
+    void Start()
     {
-        SetVolume(PlayerPrefs.GetFloat("SavedMasterVolume", 100));
+        // Load volume setting as soon as the game or sound settings menu starts.
+        float savedVolume = PlayerPrefs.GetFloat("SavedMasterVolume", 100);
+        SetVolume(savedVolume);
     }
 
     public void SetVolume(float _value)
     {
         if (_value < 1f)
         {
-            _value = 0.001f;
+            _value = 0.001f; // Prevents muting completely which could cause issues with logarithmic calculations
         }
 
         RefreshSlider(_value);
