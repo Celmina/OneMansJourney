@@ -3564,7 +3564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f73b166a5364ebb942a17c61e151fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 1st_Island
+  sceneName: WakeUpBunker
 --- !u!1 &906883023
 GameObject:
   m_ObjectHideFlags: 0
