@@ -4,16 +4,31 @@ public class UseItemOnObject : MonoBehaviour, IInteractable
 {
     private Inventory inventory;
     public GameObject itemToUse;
+    public bool consumeItem;
+    public bool destroyObject;
 
     void Start()
     {
         inventory = FindFirstObjectByType<Inventory>();
     }
+
     public void Interact()
+    {
+        if (consumeItem)
+        {
+            FConsumeItem();
+        }
+
+        if (destroyObject)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void FConsumeItem()
     {
         if (inventory.checkInventory(itemToUse))
         {
-            Destroy(gameObject);
             inventory.removeItem(itemToUse);
         }
         else
@@ -22,3 +37,4 @@ public class UseItemOnObject : MonoBehaviour, IInteractable
         }
     }
 }
+
