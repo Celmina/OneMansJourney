@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
     public void addItem(GameObject item)
     {
         items.Add(item);
+        Debug.Log($"Item Added: {item.name}");
     }
 
     public void removeItem(GameObject item)
@@ -27,4 +28,12 @@ public class Inventory : MonoBehaviour
         }
         return false;
     }
+
+    public void DisplayInventory()
+{
+    foreach (var item in items)
+    {
+        Debug.Log($"Inventory Item: {item.name}");
+    }
+}
 }
