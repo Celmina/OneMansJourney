@@ -1,14 +1,10 @@
 using UnityEngine;
-
-
-
 public class LogBridge : MonoBehaviour, IInteractable
 {
     private Inventory inventory;
     public GameObject itemToUse;
     public GameObject wall;
     public GameObject walking_log;
-
     void Start()
     {
         inventory = FindFirstObjectByType<Inventory>();

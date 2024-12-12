@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets/Scenes/Game/WakeUpBunker.unity
     guid: 0e1dd7f4c72104fd0a5a52789e817175
+  - enabled: 1
+    path: Assets/Assets/Scenes/Game/2st_Island.unity
+    guid: 587f5554b5b5dd245874972e65ca5e8f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
