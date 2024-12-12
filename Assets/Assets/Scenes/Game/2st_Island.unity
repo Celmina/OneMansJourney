@@ -4968,7 +4968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: ToBeContinued
-  fadeOverlay: {fileID: 0}
+  fadeOverlay: {fileID: 1991133864}
 --- !u!1 &1088942340 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1237718058, guid: 3f0e5178f41a2624aa31461c5846b790, type: 3}
@@ -4990,7 +4990,7 @@ MonoBehaviour:
   closedDoor: {fileID: 1088942340}
   openedDoor: {fileID: 825477890}
   messageText: {fileID: 1024329379}
-  messageDisplayTime: 2
+  messageDisplayTime: 5
 --- !u!1 &1132408559
 GameObject:
   m_ObjectHideFlags: 0
@@ -8067,6 +8067,7 @@ GameObject:
   - component: {fileID: 1991133861}
   - component: {fileID: 1991133863}
   - component: {fileID: 1991133862}
+  - component: {fileID: 1991133864}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -8131,6 +8132,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991133860}
   m_CullTransparentMesh: 1
+--- !u!225 &1991133864
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991133860}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1991959411
 GameObject:
   m_ObjectHideFlags: 0
