@@ -14318,7 +14318,10 @@ MonoBehaviour:
   Radio: {fileID: 1957525390}
   Hatchet: {fileID: 621437071}
   FuelTank: {fileID: 1699810975}
-  Battery: {fileID: 0}
+  Battery1: {fileID: 1069508183}
+  Battery2: {fileID: 1386736209}
+  Battery3: {fileID: 2141740661}
+  Battery4: {fileID: 1252968100}
   messageText: {fileID: 1539232257}
 --- !u!114 &1050158022
 MonoBehaviour:
