@@ -2,8 +2,12 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class Inventory : MonoBehaviour 
 {
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
     List<GameObject> items = new();
     
     public void addItem(GameObject item)

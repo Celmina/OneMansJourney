@@ -14075,9 +14075,6 @@ GameObject:
   - component: {fileID: 1050158017}
   - component: {fileID: 1050158016}
   - component: {fileID: 1050158015}
-  - component: {fileID: 1050158014}
-  - component: {fileID: 1050158013}
-  - component: {fileID: 1050158012}
   - component: {fileID: 1050158019}
   - component: {fileID: 1050158020}
   - component: {fileID: 1050158021}
@@ -14089,44 +14086,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1050158012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050158011}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 593c3428b9ceb440a88ded08b3cbb6c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1050158013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050158011}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf28127511a9c46d593e0c6d83812ff0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundSlider: {fileID: 1072913460}
-  masterMixer: {fileID: 24100000, guid: 2e47fc7b1a32c4b1abff394624fa3470, type: 2}
---- !u!114 &1050158014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050158011}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b9c760dfbc1406280822bade172fc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1050158015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14844,7 +14803,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1050158013}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SoundSettings, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0

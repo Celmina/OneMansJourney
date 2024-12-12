@@ -7,10 +7,12 @@ public class ItemUIController : MonoBehaviour
     public Image radio;
     public Image hatchet;
     public Image fuelTank;
+
     
     public GameObject Radio;
     public GameObject Hatchet;
     public GameObject FuelTank;
+  
     
     // Battery tracking
     public GameObject Battery1;
@@ -77,7 +79,7 @@ public class ItemUIController : MonoBehaviour
 
     void ShowSurvivorsMessage()
     {
-        messageText.text = "You reached other survivors on the Radio you need to get to them. Find a boat to get to the next Island!";
+        messageText.text = "The radio turned on but there is no signal! Find your way to an island with a communication tower!";
         messageText.gameObject.SetActive(true);
         Invoke("HideMessage", 7f);
     }
