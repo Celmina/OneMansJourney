@@ -43,7 +43,7 @@ public class DoorInteraction : MonoBehaviour, IInteractable
             // Show success message
             if (!hasShownMessage && messageText != null)
             {
-                messageText.text = "Radio is working! You reached other survivors on the radio! Get to your boat and to get to them.";
+                messageText.text = "Radio is working! You reached other survivors on the radio! Get to your boat to get to them.";
                 messageText.gameObject.SetActive(true);
                 messageTimer = messageDisplayTime;
                 hasShownMessage = true;

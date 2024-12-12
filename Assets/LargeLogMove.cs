@@ -1,16 +1,16 @@
 using UnityEngine;
-using TMPro;  // Add this for TextMeshPro support
+using TMPro;
 
 public class LogCutter : MonoBehaviour, IInteractable
 {
     private Inventory inventory;
     public GameObject Hatchet;
+    public GameObject Radio;    // Add radio reference
     public GameObject largeLog;
     public GameObject movedLog;
     
-    // Add reference for the UI text
     public TextMeshProUGUI messageText;
-    public float messageDisplayTime = 2f;  // How long to show the message
+    public float messageDisplayTime = 2f;
     private float messageTimer = 0f;
 
     void Start()
@@ -18,14 +18,12 @@ public class LogCutter : MonoBehaviour, IInteractable
         inventory = FindFirstObjectByType<Inventory>();
         movedLog.SetActive(false);
         
-        // Hide message at start
         if (messageText != null)
             messageText.gameObject.SetActive(false);
     }
 
     void Update()
     {
-        // Handle message timer
         if (messageTimer > 0)
         {
             messageTimer -= Time.deltaTime;
@@ -38,17 +36,31 @@ public class LogCutter : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (inventory.checkInventory(Hatchet))
+        bool hasHatchet = inventory.checkInventory(Hatchet);
+        bool hasRadio = inventory.checkInventory(Radio);
+
+        if (hasHatchet && hasRadio)
         {
             movedLog.SetActive(true);
             Destroy(largeLog);
         }
         else
         {
-            // Show the message
             if (messageText != null)
             {
-                messageText.text = "You need an Axe to move it";
+                if (!hasHatchet && !hasRadio)
+                {
+                    messageText.text = "You need an Axe and a Radio to proceed";
+                }
+                else if (!hasHatchet)
+                {
+                    messageText.text = "You need an Axe to move it";
+                }
+                else if (!hasRadio)
+                {
+                    messageText.text = "You need to find the Radio before proceeding";
+                }
+                
                 messageText.gameObject.SetActive(true);
                 messageTimer = messageDisplayTime;
             }
