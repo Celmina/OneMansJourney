@@ -17621,7 +17621,7 @@ MonoBehaviour:
   Battery3: {fileID: 2141740661}
   Battery4: {fileID: 1252968100}
   messageText: {fileID: 1367912220}
-  messageDisplayTime: 2
+  messageDisplayTime: 5
   fadeOverlay: {fileID: 851109035}
 --- !u!1001 &1257289101
 PrefabInstance:
