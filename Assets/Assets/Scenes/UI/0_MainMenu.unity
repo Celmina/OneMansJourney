@@ -6599,7 +6599,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1824120987}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -7319,7 +7319,6 @@ GameObject:
   - component: {fileID: 1824120984}
   - component: {fileID: 1824120983}
   - component: {fileID: 1824120982}
-  - component: {fileID: 1824120987}
   - component: {fileID: 1824120988}
   - component: {fileID: 1824120989}
   m_Layer: 5
@@ -7338,7 +7337,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1824120981}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 678a7dc34af084190ab6d3d2a80d5438, type: 3}
+  m_Script: {fileID: 11500000, guid: a53b81720c90a412e9f9945e9f91b4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1824120983
@@ -7430,18 +7429,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1824120987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824120981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a53b81720c90a412e9f9945e9f91b4de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1824120988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7636,7 +7623,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1824120987}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
