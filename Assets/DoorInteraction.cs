@@ -11,6 +11,7 @@ public class DoorInteraction : MonoBehaviour, IInteractable
     public float messageDisplayTime = 5f;  // Changed to 5 seconds for the longer message
     private float messageTimer = 0f;
     private bool hasShownMessage = false;
+    public Animator Animator;
     
     void Start()
     {
@@ -36,9 +37,7 @@ public class DoorInteraction : MonoBehaviour, IInteractable
     {
         if (inventory.checkInventory(Key))
         {
-            openedDoor.GetComponent<MeshRenderer>().enabled = true;
-            Destroy(closedDoor);
-            Destroy(gameObject);
+            Animator.Play("DoorOpen");
             
             // Show success message
             if (!hasShownMessage && messageText != null)

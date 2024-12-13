@@ -3,6 +3,7 @@ using TMPro;
 
 public class LogBridge : MonoBehaviour, IInteractable
 {
+    public Animator cameraAnimator;
     private Inventory inventory;
     public GameObject itemToUse;
     public GameObject wall;
@@ -34,8 +35,7 @@ public class LogBridge : MonoBehaviour, IInteractable
     {
         if (inventory.checkInventory(itemToUse))
         {
-            walking_log.GetComponent<MeshRenderer>().enabled = true;
-            Destroy(gameObject);
+            cameraAnimator.Play("TreeFallingAnim");
             Destroy(wall);
         }
         else
