@@ -12,6 +12,7 @@ public class LogCutter : MonoBehaviour, IInteractable
     public TextMeshProUGUI messageText;
     public float messageDisplayTime = 2f;
     private float messageTimer = 0f;
+    public GameObject backgroundPanel;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class LogCutter : MonoBehaviour, IInteractable
         
         if (messageText != null)
             messageText.gameObject.SetActive(false);
+            backgroundPanel.gameObject.SetActive(false);
     }
 
     void Update()
@@ -30,6 +32,7 @@ public class LogCutter : MonoBehaviour, IInteractable
             if (messageTimer <= 0)
             {
                 messageText.gameObject.SetActive(false);
+                backgroundPanel.gameObject.SetActive(false);
             }
         }
     }
@@ -62,6 +65,7 @@ public class LogCutter : MonoBehaviour, IInteractable
                 }
                 
                 messageText.gameObject.SetActive(true);
+                backgroundPanel.gameObject.SetActive(true);
                 messageTimer = messageDisplayTime;
             }
         }

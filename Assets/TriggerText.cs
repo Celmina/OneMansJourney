@@ -7,10 +7,12 @@ public class TriggerText : MonoBehaviour
     public float displayTime = 5f;
     private float timer;
     private bool hasTriggered = false;
+    public GameObject backgroundPanel;
 
     void Start()
     {
         messageText.gameObject.SetActive(false);
+        backgroundPanel.gameObject.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
@@ -18,6 +20,7 @@ public class TriggerText : MonoBehaviour
         if (other.CompareTag("Player") && !hasTriggered)
         {
             messageText.gameObject.SetActive(true);
+            backgroundPanel.gameObject.SetActive(true);
             messageText.text = "The bridge is broken! You will have to knock down the tree, and get over the River.";
             timer = displayTime;
             hasTriggered = true;  // Only show once
@@ -32,6 +35,7 @@ public class TriggerText : MonoBehaviour
             if (timer <= 0)
             {
                 messageText.gameObject.SetActive(false);
+                backgroundPanel.gameObject.SetActive(false);
             }
         }
     }

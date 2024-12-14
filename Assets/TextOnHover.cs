@@ -6,6 +6,7 @@ public class TextOnHover : MonoBehaviour
     public Transform InteractorSource;
     public float InteractRange;
     public TextMeshProUGUI hoverText;
+    
 
     void Start()
     {

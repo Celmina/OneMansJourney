@@ -19,12 +19,14 @@ public class TeleportBoat : MonoBehaviour, IInteractable
     private bool isTransitioning = false;
     private float transitionTime = 3f;
     private float fadeTimer = 0f;
+    public GameObject backgroundPanel;
 
     void Start()
     {
         inventory = FindFirstObjectByType<Inventory>();
         if (messageText != null)
             messageText.gameObject.SetActive(false);
+            backgroundPanel.gameObject.SetActive(false);
             
         if (fadeOverlay != null)
         {
@@ -41,6 +43,7 @@ public class TeleportBoat : MonoBehaviour, IInteractable
             if (messageTimer <= 0)
             {
                 messageText.gameObject.SetActive(false);
+                backgroundPanel.gameObject.SetActive(false);
             }
         }
 
@@ -91,6 +94,7 @@ public class TeleportBoat : MonoBehaviour, IInteractable
                 }
                 
                 messageText.gameObject.SetActive(true);
+                backgroundPanel.gameObject.SetActive(true);
                 messageTimer = messageDisplayTime;
             }
         }

@@ -11,12 +11,14 @@ public class LogBridge : MonoBehaviour, IInteractable
     public TextMeshProUGUI messageText;
     public float messageDisplayTime = 5f;
     private float messageTimer = 0f;
+    public GameObject backgroundPanel;
 
     void Start()
     {
         inventory = FindFirstObjectByType<Inventory>();
         if (messageText != null)
             messageText.gameObject.SetActive(false);
+            backgroundPanel.gameObject.SetActive(false);
     }
 
     void Update()
@@ -27,6 +29,7 @@ public class LogBridge : MonoBehaviour, IInteractable
             if (messageTimer <= 0)
             {
                 messageText.gameObject.SetActive(false);
+                backgroundPanel.gameObject.SetActive(false);
             }
         }
     }
@@ -44,6 +47,7 @@ public class LogBridge : MonoBehaviour, IInteractable
             {
                 messageText.text = "You need an axe! Go back to the village to retrieve it";
                 messageText.gameObject.SetActive(true);
+                backgroundPanel.gameObject.SetActive(true);
                 messageTimer = messageDisplayTime;
             }
         }

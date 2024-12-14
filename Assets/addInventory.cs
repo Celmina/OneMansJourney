@@ -12,6 +12,7 @@ public class ItemUIController : MonoBehaviour
     public GameObject Radio;
     public GameObject Hatchet;
     public GameObject FuelTank;
+    public GameObject backgroundPanel;
   
     
     // Battery tracking
@@ -33,6 +34,7 @@ public class ItemUIController : MonoBehaviour
         hatchet.gameObject.SetActive(false);
         fuelTank.gameObject.SetActive(false);
         messageText.gameObject.SetActive(false);
+        backgroundPanel.gameObject.SetActive(false);
     }
 
     void Update()
@@ -74,6 +76,7 @@ public class ItemUIController : MonoBehaviour
     {
         messageText.text = "Oh no the radio has no batteries you need to find batteries to reach others";
         messageText.gameObject.SetActive(true);
+        backgroundPanel.gameObject.SetActive(true);
         Invoke("HideMessage", 5f);
     }
 
@@ -81,11 +84,13 @@ public class ItemUIController : MonoBehaviour
     {
         messageText.text = "The radio turned on but there is no signal! Find your way to an island with a communication tower!";
         messageText.gameObject.SetActive(true);
+        backgroundPanel.gameObject.SetActive(true);
         Invoke("HideMessage", 7f);
     }
 
     void HideMessage()
     {
         messageText.gameObject.SetActive(false);
+        backgroundPanel.gameObject.SetActive(false);
     }
 }
