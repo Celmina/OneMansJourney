@@ -6,16 +6,16 @@ public class IntroSequence : MonoBehaviour
 {
     public TextMeshProUGUI messageText;
     public Button continueButton;
-    private float timer = 5f;
+    private float timer = 8f;
     private int currentMessage = 0;
     private bool waitingForButton = false;
     
     private string[] messages = new string[]
     {
-        "Gads ir 2100. Tu pamosties tumšā, klusā bunkurā, apjucis un dezorientēts. Tavas pēdējās atmiņas ir no 2000. gada - veselu gadsimtu atpakaļ. Pasaule, kādu tu to pazini, vairs neeksistē.",
-        "Bunkurs ir kluss. Pārāk kluss. Nav dzirdamas ne sarunas, ne soļi, ne mehānismu dūkoņa. Tikai tava elpa un attāla ūdens pilēšana pārtrauc šo nomācošo klusumu.",
-        "Kaut kas briesmīgs ir noticis ar civilizāciju, kamēr tu gulēji. Vienīgā cerība ir atrast citus izdzīvojušos, bet vispirms tev jātiek ārā no šī bunkura.",
-        "Kaut kur šajā pazemes labirintā ir izeja. Un, iespējams, atbildes par to, kas īsti ir noticis šo 100 gadu laikā."
+        "The year is 2100. You wake up in a dark, quiet bunker, confused and disoriented. Your last memories are from the year 2000—an entire century ago. The world as you know it no longer exists.",
+        "The bunker is quiet. Too quiet. No conversations, no footsteps, no mechanical humming can be heard. Only your breath and the distant dripping of water break this oppressive silence.",
+        "Something terrible has happened to civilization while you were sleeping. The only hope is to find other survivors, but first you have to get out of this bunker.",
+        "Somewhere in this underground labyrinth is an exit. And possibly, answers about what exactly has happened over the past 100 years."
     };
 
     void Start()
