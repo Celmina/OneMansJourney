@@ -8,7 +8,7 @@ public class ItemUIController2 : MonoBehaviour
     public Image key;
     
     public GameObject Key;
-    
+    public GameObject backgroundPanel;
     
     public TextMeshProUGUI messageText;
     private bool hasShownRadioMessage = false;
@@ -49,6 +49,7 @@ public class ItemUIController2 : MonoBehaviour
     {
         messageText.text = "Unlock the doors with this key";
         messageText.gameObject.SetActive(true);
+        backgroundPanel.gameObject.SetActive(true);
         Invoke("HideMessage", 5f);
     }
 
@@ -56,5 +57,6 @@ public class ItemUIController2 : MonoBehaviour
     void HideMessage()
     {
         messageText.gameObject.SetActive(false);
+        backgroundPanel.gameObject.SetActive(false);
     }
 }

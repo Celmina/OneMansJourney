@@ -6,7 +6,7 @@ public class StartText : MonoBehaviour
     public TextMeshProUGUI objectiveText;
     public float displayTime = 5f;
     private float timer;
-
+    public GameObject backgroundPanel;
     void Awake()
     {
         Debug.Log("StartText script is awake");
@@ -25,6 +25,7 @@ public class StartText : MonoBehaviour
         if (objectiveText != null)
         {
             objectiveText.gameObject.SetActive(true);
+            backgroundPanel.gameObject.SetActive(true);
             objectiveText.text = "You need to get signal! Get to the top of the tower!";
             timer = displayTime;
             Debug.Log("Text should be visible now: " + objectiveText.text);
@@ -41,6 +42,7 @@ public class StartText : MonoBehaviour
             if (timer <= 0)
             {
                 objectiveText.gameObject.SetActive(false);
+                backgroundPanel.gameObject.SetActive(false);
                 Debug.Log("Text hidden after timer");
             }
         }

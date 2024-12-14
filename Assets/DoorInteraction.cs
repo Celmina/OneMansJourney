@@ -12,6 +12,7 @@ public class DoorInteraction : MonoBehaviour, IInteractable
     private float messageTimer = 0f;
     private bool hasShownMessage = false;
     public Animator Animator;
+    public GameObject backgroundPanel;
     
     void Start()
     {
@@ -19,6 +20,7 @@ public class DoorInteraction : MonoBehaviour, IInteractable
         openedDoor.GetComponent<MeshRenderer>().enabled = false;
         if (messageText != null)
             messageText.gameObject.SetActive(false);
+            backgroundPanel.gameObject.SetActive(false);
     }
 
     void Update()
@@ -29,6 +31,7 @@ public class DoorInteraction : MonoBehaviour, IInteractable
             if (messageTimer <= 0)
             {
                 messageText.gameObject.SetActive(false);
+                backgroundPanel.gameObject.SetActive(false);
             }
         }
     }
@@ -42,8 +45,9 @@ public class DoorInteraction : MonoBehaviour, IInteractable
             // Show success message
             if (!hasShownMessage && messageText != null)
             {
-                messageText.text = "Radio is working! You reached other survivors on the radio! Get to your boat to get to them.";
+                messageText.text = "You reached other survivors on the radio! Get to your boat to get to them.";
                 messageText.gameObject.SetActive(true);
+                backgroundPanel.gameObject.SetActive(true);
                 messageTimer = messageDisplayTime;
                 hasShownMessage = true;
             }
@@ -54,6 +58,7 @@ public class DoorInteraction : MonoBehaviour, IInteractable
             {
                 messageText.text = "You need a key to open this door";
                 messageText.gameObject.SetActive(true);
+                backgroundPanel.gameObject.SetActive(true);
                 messageTimer = messageDisplayTime;
             }
         }
