@@ -3673,7 +3673,7 @@ GameObject:
   - component: {fileID: 272040508}
   m_Layer: 0
   m_Name: Battery
-  m_TagString: Untagged
+  m_TagString: Hoverable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5610,6 +5610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fuel Tank
       objectReference: {fileID: 0}
+    - target: {fileID: 1215395421967941289, guid: 3028bdafdc13c1c4a911990395bbbce8, type: 3}
+      propertyPath: m_TagString
+      value: Hoverable
+      objectReference: {fileID: 0}
     - target: {fileID: 1987814901560157203, guid: 3028bdafdc13c1c4a911990395bbbce8, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.9
@@ -5745,6 +5749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree_pine_naked
       objectReference: {fileID: 0}
+    - target: {fileID: 8899760231750296950, guid: e19866fb5b7d2244fbc54ebdfd551950, type: 3}
+      propertyPath: m_TagString
+      value: Hoverable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5824,6 +5832,10 @@ PrefabInstance:
     - target: {fileID: 3641757652541056138, guid: eac2191c20b7acb4f8c3ca88637b42f3, type: 3}
       propertyPath: m_Name
       value: LargeLog
+      objectReference: {fileID: 0}
+    - target: {fileID: 3641757652541056138, guid: eac2191c20b7acb4f8c3ca88637b42f3, type: 3}
+      propertyPath: m_TagString
+      value: Hoverable
       objectReference: {fileID: 0}
     - target: {fileID: 4161836121165495856, guid: eac2191c20b7acb4f8c3ca88637b42f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -7944,6 +7956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: battery (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1123693314251274, guid: b741fa043c0908c499bb320804aa111b, type: 3}
+      propertyPath: m_TagString
+      value: Hoverable
+      objectReference: {fileID: 0}
     - target: {fileID: 4130326413330252, guid: b741fa043c0908c499bb320804aa111b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3333329
@@ -9029,7 +9045,7 @@ GameObject:
   - component: {fileID: 621437077}
   m_Layer: 0
   m_Name: Hache
-  m_TagString: Untagged
+  m_TagString: Hoverable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9550,6 +9566,10 @@ PrefabInstance:
     - target: {fileID: 1123693314251274, guid: b741fa043c0908c499bb320804aa111b, type: 3}
       propertyPath: m_Name
       value: battery (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123693314251274, guid: b741fa043c0908c499bb320804aa111b, type: 3}
+      propertyPath: m_TagString
+      value: Hoverable
       objectReference: {fileID: 0}
     - target: {fileID: 4130326413330252, guid: b741fa043c0908c499bb320804aa111b, type: 3}
       propertyPath: m_LocalScale.x
@@ -12543,6 +12563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: battery (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1123693314251274, guid: b741fa043c0908c499bb320804aa111b, type: 3}
+      propertyPath: m_TagString
+      value: Hoverable
+      objectReference: {fileID: 0}
     - target: {fileID: 4130326413330252, guid: b741fa043c0908c499bb320804aa111b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3333329
@@ -12866,7 +12890,7 @@ RectTransform:
   m_GameObject: {fileID: 851109031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 126.64432, y: 13.501398, z: 1}
+  m_LocalScale: {x: -1.0113598, y: 1.0393162, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1050158018}
@@ -12874,7 +12898,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -1120, y: -588}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851109033
 MonoBehaviour:
@@ -18956,6 +18980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: battery
       objectReference: {fileID: 0}
+    - target: {fileID: 1123693314251274, guid: b741fa043c0908c499bb320804aa111b, type: 3}
+      propertyPath: m_TagString
+      value: Hoverable
+      objectReference: {fileID: 0}
     - target: {fileID: 4130326413330252, guid: b741fa043c0908c499bb320804aa111b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3333329
@@ -23885,6 +23913,10 @@ PrefabInstance:
     - target: {fileID: 100012, guid: 0dcd983d24602f64d93f3bafcb612a2f, type: 3}
       propertyPath: m_Name
       value: Radio
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0dcd983d24602f64d93f3bafcb612a2f, type: 3}
+      propertyPath: m_TagString
+      value: Hoverable
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 0dcd983d24602f64d93f3bafcb612a2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -29506,6 +29538,10 @@ PrefabInstance:
     - target: {fileID: 138876, guid: 49435368747ef0e4083a7396a176638a, type: 3}
       propertyPath: m_Name
       value: Boat_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 138876, guid: 49435368747ef0e4083a7396a176638a, type: 3}
+      propertyPath: m_TagString
+      value: Hoverable
       objectReference: {fileID: 0}
     - target: {fileID: 404526, guid: 49435368747ef0e4083a7396a176638a, type: 3}
       propertyPath: m_LocalScale.x
